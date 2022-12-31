@@ -16,6 +16,10 @@ section {
     display: none;
 }
 
+.no-hide{
+    display: flex;
+}
+
 @media (max-width: 1100px) {
     .container {
         padding: 0 15px;

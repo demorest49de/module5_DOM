@@ -24,10 +24,10 @@
 	  <div class="list-product__block">
 		<div class="list-product__nav nav">
 		  <div class="nav__block">
-			  <button class="nav__filter-btn">Фильтр</button>
-			  <form action="" class="nav__search">
-				<input class="nav__input" type="search" placeholder="Поиск по наименованию и категории">
-			  </form>
+			<button class="nav__filter-btn">Фильтр</button>
+			<form action="" class="nav__search">
+			  <input class="nav__input" type="search" placeholder="Поиск по наименованию и категории">
+			</form>
 			<button class="nav__add-btn">Добавить товар</button>
 		  </div>
 		</div>
@@ -176,37 +176,43 @@
 			</tbody>
 		  </table>
 		</div>
-		  <div class="list-product__footer">
-			<div class="list-product__footer-block">
-			  <div class="list-product__footer-sub-block">
-				<span class="list-product__footer-span">Показывать на странице:</span>
-				<select class="list-product__select-page">
-				  <option value="5">5</option>
-				  <option value="10">10</option>
-				  <option value="20">20</option>
-				</select>
-			  </div>
-
-			  <div class="list-product__pages">
-				<div class="list-product__pages-displayed">1-5 of</div>
-
-				<div class="list-product__total-pages">25</div>
-			  </div>
-			  <button class="list-product__arrow-pages list-product__prev-page" aria-label="left"></button>
-
-			  <button class="list-product__arrow-pages list-product__next-page" aria-label="right"></button>
+		<div class="list-product__footer">
+		  <div class="list-product__footer-block">
+			<div class="list-product__footer-sub-block">
+			  <span class="list-product__footer-span">Показывать на странице:</span>
+			  <select class="list-product__select-page">
+				<option value="5">5</option>
+				<option value="10">10</option>
+				<option value="20">20</option>
+			  </select>
 			</div>
+
+			<div class="list-product__pages">
+			  <div class="list-product__pages-displayed">1-5 of</div>
+
+			  <div class="list-product__total-pages">25</div>
+			</div>
+			<button class="list-product__arrow-pages list-product__prev-page" aria-label="left"></button>
+
+			<button class="list-product__arrow-pages list-product__next-page" aria-label="right"></button>
 		  </div>
+		</div>
 	  </div>
 	</div>
 
 
   </section>
 
-  <div class="overlay hide">
+  <div class="overlay no-hide">
 	<div class="add-item">
 	  <div class="add-item__container">
-		<h1 class="add-item__title">добавить товар</h1>
+		<div class="add-item__block-title">
+		  <h1 class="add-item__title">добавить товар</h1>
+		  <div class="add-item__title-subblock">
+			<span class="add-item__id">ID: <span class="add-item__id-number">201910241</span></span>
+			<button class="add-item__edit-btn" aria-label="edit"></button>
+		  </div>
+		</div>
 		<div class="add-item__line"></div>
 		<form class="add-item__form" action="https://jsonplaceholder.typicode.com/posts" name="add-item__form"
 			  id="add-item__form" method="post">
