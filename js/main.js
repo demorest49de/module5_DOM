@@ -3,9 +3,9 @@
 const addItemTitle = document.querySelector('.add-item__title');
 const addItemEditBtn = document.querySelector('.add-item__edit-btn');
 const addItemIdNumber = document.querySelector('.add-item__id-number');
-const addItemForm = document.querySelector('#add-item__form');
+const addItemForm = document.getElementById('add-item__form');
 const addItemCheckbox = document.querySelector('.add-item__checkbox');
-const addItemDiscount = document.querySelector('#add-item__discount');
+const addItemDiscount = document.getElementById('add-item__discount');
 const addItemTotalValue = document.querySelector('.add-item__total-value');
 
 console.log('addItemTitle: ', addItemTitle);
